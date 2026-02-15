@@ -1,0 +1,33 @@
+{
+    "name": "avadim/fast-excel-benchmark",
+    "description": "Benchmark suite for XLSX write/read: FastExcelWriter/FastExcelReader vs PhpSpreadsheet vs OpenSpout",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/aVadim483/fast-excel-benchmark",
+    "authors": [
+        {
+            "name": "Vadim Shemarov",
+            "homepage": "https://github.com/aVadim483"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "avadim/fast-excel-reader": "^3.0",
+        "avadim/fast-excel-writer": "^6.11",
+        "phpoffice/phpspreadsheet": "^5.4",
+        "openspout/openspout": "^5.4",
+        "symfony/cache": "^8.0",
+        "psr/simple-cache": "^3.0"
+    },
+    "scripts": {
+        "bench": "php console/bench.php",
+        "report": "php console/report.php"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform-check": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
